@@ -7,6 +7,7 @@ terraform {
   }
 }
 
+# inherited config from parent (if provider already exists in parent)
 # provider "docker" {
 #   # Configuration options
 # }

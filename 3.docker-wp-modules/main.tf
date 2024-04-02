@@ -2,14 +2,6 @@ resource "docker_network" "wordpress_network" {
   name = "wordpress_network"
 }
 
-# resource "docker_volume" "db_data" {
-#   name = "db_data"
-# }
-
-# resource "docker_volume" "wp_data" {
-#   name = "wp_data"
-# }
-
 module "volumes" {
   source = "./modules/volumes"
   volumes_names = var.volumes_names
