@@ -1,0 +1,1 @@
+volumes_names = [ "db_data", "wp_data" ]
