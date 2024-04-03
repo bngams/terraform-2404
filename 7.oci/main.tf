@@ -69,3 +69,21 @@ resource "oci_core_instance" "ubuntu_instance" {
     } 
     preserve_boot_volume = false
 }
+
+# resource "oci_database_db_system" "test_db_system" {
+#     #Required
+#     availability_domain = data.oci_identity_availability_domains.ads.availability_domains[0].name
+#     compartment_id = oci_identity_compartment.my_compartment.compartment_id
+#     db_home {
+#         #Required
+#         database {
+#             #Required
+#             admin_password = var.db_admin_pass
+#             db_name = var.db_name
+#         }
+#     }
+#     hostname = "wp-1-db"
+#     shape = "MySQL.2"
+#     ssh_public_keys = [file("${path.module}/.ssh/oci.pub")]
+#     subnet_id = oci_core_subnet.my_subnet.id
+# }
